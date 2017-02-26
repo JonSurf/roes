@@ -1,5 +1,8 @@
 
 
+
+
+/* top navigation bar
  /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
@@ -20,7 +23,7 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 30px;
 }
 
 /* Change background color of links on hover */
@@ -56,8 +59,35 @@ ul.topnav li.icon {display: none;}
   }
 }
 
+/* background */
+body {
+    background-color: #333;
+}
 
+div.logo    {
+    position:absolute;
+    left: 800px;
+    top: 0px;
+    width: 250px;
+    height:60px;
+    z-index: 10;
+    font-size: 70px;
+    background-color: #333;
 
+}
+div.picture  {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    border: 1px solid green;
+}
 
-div.container {
-    with: 100px;
+div.tekst {
+    position: relative;
+    top: 40px;
+    left: 400px;
+    width: 500px;
+    height: 800px;
+    border: 1px solid black;
+}
