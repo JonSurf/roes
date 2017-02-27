@@ -19,5 +19,6 @@ function openplayer(evt, songName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(songName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+    evt.currentTarget.className += " active"; 
+  }
+  
