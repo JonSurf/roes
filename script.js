@@ -1,3 +1,4 @@
+//top navigatie
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -5,4 +6,18 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
+}
+/* muziek tabs */
+function openplayer(evt, songName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(songName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
