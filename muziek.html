@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head> 
+  <meta name="robots" content="noindex">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="roes.css">
 <title> Muziek </title>
   <meta charset="UTF-8">
@@ -17,13 +19,37 @@
     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
   </li>
 </ul>
-<div class="logo">
-  
-  <img src="/home/jonathan/roes/images/logo1.jpg"
-      onmouseover="this.src='/home/jonathan/roes/images/logo2.jpg'" style="height: 65px;"
-      onmouseout="this.src='/home/jonathan/roes/images/logo1.jpg';">
 
+<div id="Toekomstmuziek" class="tabcontent">
+  <iframe src="https://www.youtube.com/embed/1THE37Nn3kI" frameborder="0">
+</iframe> 
 </div>
+
+<div id="MDMA" class="tabcontent">
+  <iframe src="https://www.youtube.com/embed/fbCS_7EmLJU">
+</iframe>  
+</div>
+
+<div id="Bus300" class="tabcontent">
+  <iframe src="https://www.youtube.com/embed/ZUI70df3Cbo">
+</iframe>  
+</div>
+
+ <div id="Wierrook" class="tabcontent">
+  <iframe src="https://www.youtube.com/embed/z5s4P-yvMgY">
+</iframe>  
+</div>
+
+<div id="Geworteld" class="tabcontent">
+  <iframe src="https://www.youtube.com/embed/Su3T5jMFIck">
+</iframe>  
+</div>
+
+<div id="Toekomstmuziek2" class="tabcontent">
+  <iframe src="https://www.youtube.com/embed/U4nyvJ7rzkA">
+</iframe>  
+</div>
+
 <div class="tab">
   <a href="javascript:void(0)" class="tablinks" onclick="openplayer(event, 'Toekomstmuziek')" id="default">Toekomstmuziek</a>
   <a href="javascript:void(0)" class="tablinks" onclick="openplayer(event, 'MDMA')">MDMA</a>
@@ -33,42 +59,24 @@
   <a href="javascript:void(0)" class="tablinks" onclick="openplayer(event, 'Toekomstmuziek2')">Toekomstmuziek II</a>
 </div>
 
-<div id="Toekomstmuziek" class="tabcontent">
-  <iframe width="950" height="550"
-src="https://www.youtube.com/embed/1THE37Nn3kI">
-</iframe> 
+
+<div class="row">
+
+<div class="col-10">
+
 </div>
 
-<div id="MDMA" class="tabcontent">
-  <iframe width="950" height="550"
-src="https://www.youtube.com/embed/fbCS_7EmLJU">
-</iframe>  
+<div class="col-2 logo">
+  
+  <img src="/logo1.jpg"
+      onmouseover="this.src='/logo2.jpg'";
+      onmouseout="this.src='/logo1.jpg';" style="width:100%">
+
 </div>
 
-<div id="Bus300" class="tabcontent">
-  <iframe width="950" height="550"
-src="https://www.youtube.com/embed/ZUI70df3Cbo">
-</iframe>  
-</div>
 
- <div id="Wierrook" class="tabcontent">
-  <iframe width="950" height="550"
-src="https://www.youtube.com/embed/z5s4P-yvMgY">
-</iframe>  
-</div>
 
-<div id="Geworteld" class="tabcontent">
-  <iframe width="950" height="550"
-src="https://www.youtube.com/embed/Su3T5jMFIck">
-</iframe>  
 </div>
-
-<div id="Toekomstmuziek2" class="tabcontent">
-  <iframe width="950" height="550"
-src="https://www.youtube.com/embed/U4nyvJ7rzkA">
-</iframe>  
-</div>
-
 <script>
 document.getElementById("default").click();
 </script>

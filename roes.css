@@ -64,33 +64,55 @@ body {
     background-color: #333;
 }
 
-div.logo    {
-    position:absolute;
-    left: 800px;
-    top: 0px;
-    width: 250px;
-    height:60px;
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+     padding: 1px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+div.logo {
+    position: absolute;
+    top: 0px; 
+    right: 0px;
     z-index: 10;
-    font-size: 70px;
-    background-color: #333;
 
 }
-div.picture  {
-    position: relative;
-    left: 0px;
-    width: 100%;
+
+.col-12 img {
+    width:100%;
     height: 400px;
-    
+}
+/* responsive */
+@media screen and (max-width:680px) {
+    .col-12 img { height: auto; }
 }
 
 div.tekst {
-    position: relative;
-    top: 0px;
-    left: 400px;
-    width: 500px;
-    height: 800px;
     padding: 20px;
 }
+
 
 a:link {
     text-decoration: none;
@@ -108,49 +130,6 @@ a:hover { color: red;
 a:active { color: blue;
 }
 
-
-div.quote1 {
-    position: absolute;
-    top: 90px;
-    left: 500px;
-    height: 30px;
-    width: 150px;
-    padding: 10px;
-    border: 5px solid black;
-    background-color: #ba4e0b;
-    font-size: 14px;
-    text-align: center;
-    z-index: 10; 
-
-
-}
-div.quote2 {
-    position: absolute;
-    top: 750px;
-    left: 450px;
-    height: 30px;
-    width: 150px;
-    padding: 10px;
-    border: 5px solid black;
-    background-color: #ba4e0b;
-    font-size: 14px;
-    text-align: center;
-    z-index: 10; 
-}
-
-div.quote3 {
-    position: relative;
-    top: 50px;
-    left: 200px;
-    height: 60px;
-    width: 150px;
-    padding: 10px;
-    border: 5px solid black;
-    background-color: #ba4e0b;
-    font-size: 14px;
-    text-align: center;
-    z-index: 10; 
-}
 
 
 /* Muziek tabs*/
@@ -185,12 +164,54 @@ div.tab a:focus, .active {
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
+    top: 47px;
+    left: 200px;
     position: absolute;
-    left: 250px;
-    top: 67px;
+    padding: 25px;
+}
+
+.tabcontent iframe {
+    width: 750px; 
+    height: 350px;
+}
+
+/* mobile phone responsive */
+@media screen and (max-width:680px) {
+    body {background-color: #6d6d6d;}
+    ul.topnav {background-color: #6d6d6d;}
+    div.logo {visibility: hidden;
+        }
+    a:link {
+    color: #f26b10;}
+    div.tab {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    padding: 10px;
+    }
+    div.tab a { 
+    width: 100%;
+    text-align: center;
+    }
+    .tabcontent {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    float: none;
+    }
+    .tabcontent iframe { 
+    width: 100%;
+    height: 200px;
+    
+   
+    }
+    
+    [class*="col-6 tekst"] {
+        width: 100%;
+
 }
 }
 

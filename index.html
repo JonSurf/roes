@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
   <link rel="stylesheet" type="text/css" href="roes.css">
 <title> Home </title>
   <meta charset="UTF-8">
@@ -8,6 +10,7 @@
   </head>
 
 <body>
+
 
    <ul class="topnav" id="myTopnav">
   <li><a href="index.html">Home</a></li>
@@ -19,37 +22,36 @@
   </li>
 </ul>
 
-<div class="logo">
-	
-  <img src="/home/jonathan/roes/images/logo1.jpg"
-      onmouseover="this.src='/home/jonathan/roes/images/logo2.jpg'" style="height: 65px;"
-      onmouseout="this.src='/home/jonathan/roes/images/logo1.jpg';">
+<div class="row">
 
-</div>
-<div class="picture"> 
-<img src="/home/jonathan/roes/images/slide2.jpg" style="width:100%;height:400px;">
+<div class="col-10">
 
 </div>
 
-<div class="tekst">
-<h1> kan alle pagina's op 1 pagina doen, dat je zo naar beneden scrolt! </h1>
+<div class="col-2 logo">
+  <img src="/logo1.jpg"; 
+      onmouseover="this.src='/logo2.jpg'";
+      onmouseout="this.src='/logo1.jpg';" style="width:100%;">
+
+</div>
+
+<div class="col-12"> 
+<picture> 
+	<source srcset="/slide21.jpg" media="(max-width: 400px)">
+	<source srcset="/slide2.jpg"> <img src="/slide2.jpg"> 
+</picture>
+</div>
+
+<div class="col-3">
+
+</div>
+
+<div class="col-6 tekst">
+
 
  <p> Roes is een 24 jarige rapper gebasseerd in Groningen, Nederland. Hij schrijft, produceert en mixed zijn muziek zelf.</p>
 
- <h2> Wat zeggen andere mensen over Roes? </h2>
-<div class="quote1">
-<i>"Leuke liedjes"</i> 
-- Moeder van Jonathan
-</div>
-
-</div>
- <div class="quote2">
-<i>"Mooie rapjes"</i> 
-- Moeder van Roes
-
-<div class="quote3">
-<i>DIE INTRO WOOOOOW﻿ </i>
-- Youtubegebruiker Weiying Sheeran
 </div>
   </body>
 </html>
+
